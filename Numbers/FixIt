@@ -1,0 +1,83 @@
+ 1. Write a program which print sentence on console.
+ 2. Write a program which prints multiple sentences on console.
+ 3. Write a program which accept number from user and print that number.
+ 4. Write a program which accept two numbers and print its addition.
+ Input : 10 20
+ Output : 30
+ 5. Write a program which accept three numbers and print its multiplication.
+ Input : 5 4 7
+ Output : 140
+ 6. Write a program which accept two numbers and print maximum number.
+ Input : 4 7
+ Output : 7
+ 7. Write a program which accept two numbers and print minimum number.
+ Input : 4 7
+ Output : 4
+ 8. Write a program which accepts N from user and print all even numbers up to
+ N.
+ Input : 20
+ Output : 2 4 6 8 10 12 14 16 18 20
+ 9. Write a program which accepts N from user and print all odd numbers up to
+ N.
+ Input : 20
+ Output : 1 3 5 7 9 11 13 15 17 19
+ 10.Write a program which accept N from user and print number-line for N.
+ Input : 4 Output : -4 -3 -2 -1 0 1 2 3 4
+ 11.Write a program which accept N and print first 5 multiples of N.
+ Input : 4 Output : 4 8 12 16 20
+ 12.Write a program which accept N numbers from user and print addition of that
+ numbers.
+ Input : 4 7 2 1 5 3 8 Output : 30
+ 13.Write a program which accept N numbers from user and print maximum
+ number from that numbers.
+ Input : 4 7 2 1 5 3 8 Output : 8
+ 14.Write a program which accept N numbers from user and print minimum
+ number from that numbers.
+ Input : 4 7 2 1 5 3 8 Output : 1
+ 15.Write a program which accept N numbers from user and print second last
+ maximum number from that numbers.
+ Input : 4 7 2 1 5 3 8 Output : 7
+ 16.Write a program which accept N numbers from user and print second last
+ minimum number from that numbers.
+ Input : 4 7 2 1 5 3 8 Output : 2
+ 17.Write a program to check given number is perfect number or not.
+ Input : 6 Output : 6 is perfect number
+ 18.Write a program which accepts range from user and print perfect numbers
+ from given range.
+ Input : 1 10 Output : Perfect numbers are : 6
+ 19.Write a program which accepts range from user and print prime numbers
+ from given range.
+ 20.Write a program to check given number is prime number or not.
+ Input : 5 Output : 5 is prime number
+ 21.Write a program to check whether given number is Armstrong Number or
+ not.
+ Input : 153 Output : 153 is Armstrong number
+ 22.Write a program to check whether a number is strong number or not.
+ Input : 145 Output : 145 is strong number
+ 23.Write a program to find factorial of given number.
+ Input : 5 Output : 120
+ 24.Write a program prime factor of a number.
+ Input : 15 Output : prime factors 3 5
+ 25.Write a program to print Fibonacci series accept number of element in series
+ from user.
+ Input : 6 Output : 0 1 1 2 3 5
+ 26.Write a program to find power of a given number.
+ Input : 2 4 Output : 16
+ 27.Write a program to find number of digits.
+ Input : 1535 Output : 4
+ 28.Write a program to find out sum of digit of given number.
+ Input : 1535 Output : 14
+ 29.Write a program to reverse the number.
+ Input : 1535 Output : 5351
+ 30.Write a program which accept number from user and print all digits from that
+ number which are at even position.
+ Input : 1537 5641 Output : 5761
+ 31.Write a program which accept number from user and check whether number
+ is palindrome number or not.
+ Input : 151 Output : 151 is palindrome number
+ 32.Write a program which accept range from user and print all numbers from
+ that range whose addition of digits of that number is prime number.
+ Input : 20 30 Output : 20 21 23 25 29 30
+ 33.Write a program which accept number from user and print addition of digits
+ which are divisible by 3.
+ Input : 295367542 Output : 18
