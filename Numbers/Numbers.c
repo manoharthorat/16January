@@ -1,18 +1,171 @@
 #include<stdio.h>
 
-void Perfect(int start, int end)
+/*
+//Fibonacci
+void Fibonacci(int no)
+{
+	int no1=1;
+	int no2=0;
+	int no3=0;
+	int i=0;
+	for(i=1;i<=no;i++)
+	{
+		printf("%d ",no3);
+		no2=no3;
+		no3=no1;
+		no1=no2+no3;
+	}
+}
+int main()
+{
+	int no=5;
+	Fibonacci(no);
+	return 0;
+}
+*/
+/*
+//Strong number
+int fact1(int);
+void Strong(int no)
+{
+	int digit=0;
+	int ans=0;
+	int no1=no;
+	while(no!=0)
+	{
+		digit=no%10;
+		ans=ans+fact1(digit);
+		no= no/10;
+	}
+	if(ans==no1)
+	{
+		printf("strong");
+	}
+	else
+	{
+		printf("not strong");
+	}
+}
+int fact1(int no)
+{	
+	int ans=1;
+	while(no !=0)
+	{
+		ans=ans*no;
+		no--;
+	}
+	return ans;
+}
+int main()
+{
+	int no=145;
+	Strong(no);
+	return 0;
+}
+*/
+
+/*
+//Armstrong
+int pow1(int no,int mul);
+
+void Armstrong(int no)
+{
+	int dig=0;
+	int count=0;
+	int sum=0;
+	int no1=no;
+	int no2=no;
+	int i=0;
+		while(no!=0)
+		{
+			dig=no%10;
+			no=no/10;
+			count++;	
+		}
+		while(no1!=0)
+		{
+			dig=no1%10;
+			sum=sum+pow1(dig,count);
+			no1=no1/10;
+		}
+		if(no2==sum)
+		{
+			printf("Armstrong %d ",no2);
+		}
+		else
+		{
+			printf("not arm");
+		}
+	
+}
+int pow1(int no,int mul)
+{
+	int ans=1;
+	while(mul!=0)
+	{
+		ans=no*ans;
+		mul--;
+	}
+	return ans;
+
+}
+int main()
+{
+	int no=153;
+	Armstrong(no);
+	return 0;
+}
+*/
+/*
+void Prime(int no)
+{
+	int i=0;
+	int count=0;	
+
+	for(i=1;i<=no;i++)
+	{
+		if(no%i==0)
+		{
+			count++;
+		}
+	}
+	if(count==2)
+	{
+		printf("primte");
+	}
+	else
+	{
+		printf("not prime");
+	}
+}
+int main()
+{
+	int no=6;
+	Prime(no);
+	return 0;
+}
+*/
+/*
+void Perfect()
 {
 	int i=0,temp=0;
 	int sum=0;
-	for(i=start; i<end; i++)
-	{
-		for(int j=0;j<start;j++)
-		{	
-			temp=start;
-			if(j%start==0)
+	int div=1;
+	for(i=1; i<=50; i++)
+	{	
+		div=1;
+		sum=0;
+		while(div < i)
+		{
+			if(i%div==0)
 			{
-				sum = sum +j;
+				sum=sum+div;
 			}
+			div++;
+		}
+		if(i==sum)
+		{
+			printf("%d ",i);
 		}
 	}
 }
@@ -20,9 +173,10 @@ int main()
 {
 	int start=0;
 	int end=10;
-	Perfect(start,end);
+	Perfect();
 return 0;
 }
+*/
 
 /*
 //Write a program to check given number is perfect number or not

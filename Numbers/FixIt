@@ -41,13 +41,13 @@
  from given range.
  Input : 1 10 Output : Perfect numbers are : 6
  
- 19.Write a program which accepts range from user and print prime numbers
- from given range.
- 
  20.Write a program to check given number is prime number or not.
  Input : 5 Output : 5 is prime number
  
- 21.Write a program to check whether given number is Armstrong Number or
+ 19.Write a program which accepts range from user and print prime numbers
+ from given range.
+ 
+  21.Write a program to check whether given number is Armstrong Number or
  not.
  Input : 153 Output : 153 is Armstrong number
  
