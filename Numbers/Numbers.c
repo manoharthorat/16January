@@ -1,4 +1,60 @@
 #include<stdio.h>
+
+void Perfect(int start, int end)
+{
+	int i=0,temp=0;
+	int sum=0;
+	for(i=start; i<end; i++)
+	{
+		for(int j=0;j<start;j++)
+		{	
+			temp=start;
+			if(j%start==0)
+			{
+				sum = sum +j;
+			}
+		}
+	}
+}
+int main()
+{
+	int start=0;
+	int end=10;
+	Perfect(start,end);
+return 0;
+}
+
+/*
+//Write a program to check given number is perfect number or not
+void Perfect(int no)
+{
+	int i=0;
+	int sum=0;
+	int no1=no;
+	for(i=1;i<no;i++)
+	{
+		if(no % i==0)
+		{
+			sum = sum+i;
+		}
+	}
+	if(no1==sum)
+	{
+		printf("Perfect");
+	}
+	else
+	{
+		printf("Not perfect");
+	}
+}
+int main()
+{
+	int no=7;
+	Perfect(no);
+	return 0;
+}
+*/
+
 /*
 void minimum(int arr[], int no)
 {
