@@ -23,10 +23,8 @@ int main(int argc, char * argv[])
 		fprintf(stderr, "ERROR, no port provided\n");
 		exit(1);
 	}
-	printf("before fd");
 	
 	socketfd = socket(AF_INET, SOCK_STREAM, 0);
-	printf("after fd");
 	if(socketfd < 0)
 	{
 		error("ERROR opening socket");

@@ -1,0 +1,122 @@
+.Write a program to convert the string from upper case to lower case
+(Implement strlwr()).
+Input : DevIce DriVer   Output : device driver
+11.Write a program to convert the string from lower case to upper case
+(Implement strupr()).
+Input : DevIce DriVer
+Output : DEVICE DRIVER
+12.Write a program which toggles the case of a string.
+Input : DevIce DriVer
+Output : dEViCE dRIvER
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+19.Write a program which accept two strings from user and compare two
+strings. If both strings are equal then return 0 otherwise return difference
+between first mismatch character (Implement strcmp()).
+Input : FirStr FirStr
+Output : Both strings are equal.
+20.Write a program which accept two strings from user and compare only first N
+characters of two strings. If both strings are equal till first N characters then
+return 0 otherwise return difference between first mismatch character
+(Implement strncmp()).
+Input : FirStr FirNew 3		Output : Both strings are equal.
+21.Write a program which accept two strings from user and compare two strings
+without case sensitivity. If both strings are equal then return 0 otherwise return
+difference between first mismatch character (Implement stricmp()).
+Input : FirStr FIRStR
+Output : Both strings are equal.
+22.Write a program which accept string from user and then reverse the string
+without taking another string (Implement strrev()).
+Input : Hello World
+Output : dlroW olleH
+23.Write a program which accept string from user and then reverse the string till
+first N characters without taking another string.
+Input : Hello World 5
+Output : olleH World
+24.Write a program which accept string from user and then reverse the string till
+last N characters without taking another string.
+Input : Hello World 5
+Output : Hello dlroW
+25.Write a program which accept string from user and then accept range and
+reverse the string in that range without taking another string.
+Input : Hello World 3 8
+Output : HeoW ollrld
+26.Write a program which accept string from user and reverse words from that
+string.
+Input : Hello World
+Output : olleH dlroW
+27.Write a program which accept string from user and reverse words from that
+string which are of even length.
+Input : New HO abcd can
+Output : New OH dcba can
+28.Write a program which accept string from user and check whether string is
+palindrome or not.
+Input : level
+Output : String is palindrome.
+29.Write a program which sets all characters in string to a specific character
+(Implement strset()).
+Input : HelloWorld a
+Output : aaaaaaaaaa
+30.Write a program which sets first N characters in string to a specific character
+(Implement strnset()).
+Input : HelloWorld a 8
+Output : aaaaaaaald
+31.Write a program which sets first N characters in string to a specific character
+Input : HelloWorld a 8
+Output : Heaaaaaaaa
+32.Write a program which accept string from user and search first occurrence of
+specific character in string and return the position at which character is found
+(Implement strchr()).
+Input : India is my country. M Output : Character m is found at position 1
+33.Write a program which accept string from user and search last occurrence of
+specific character in string and return the position at which character is found
+(Implement strchr()).
+Input : India is my country. n Output : Character m is found at position 1
+
