@@ -2,6 +2,303 @@
 #include<string.h>
 #include<stdlib.h>
 
+
+
+int main()
+{
+	char 
+return 0;
+}
+
+
+
+/*
+//Plaindrome
+int Palindrome(char * str)
+{
+	char * temp=str;
+	while(*temp!='\0')
+	{
+		temp++;
+	}
+	temp--;
+	while(str <= temp)
+	{
+		if(*str == *temp)
+		{
+			str++;
+			temp--;
+		}
+		else
+		{
+			return 0;
+		}
+	}
+	return 1;
+}
+
+int main()
+{
+	char str[50]="level ";
+	int ret=Palindrome(str);
+	if(ret ==1)
+	{
+		printf("palindrome\n");
+	}
+	else
+	{
+		printf("Not Palindrome\n");
+	}
+	return 0;
+}
+*/
+
+/*
+char * ReverseWord(char * temp1)
+{
+	char * temp2=temp1;
+	char * temp3=temp1;
+	char * temp4=temp1;
+	char ch;
+	int count=0;
+	while(*temp4!='\0')
+	{
+		
+		temp2=temp1;
+		count =0;
+		while(*temp2 != ' ' && *temp2!='\0')
+		{
+			temp2++;
+			count ++;
+		}
+		temp4=temp2;
+		temp2--;
+		if(count %2 ==0)
+		{
+		while(temp1<=temp2)
+		{
+			ch= *temp2;
+			*temp2=*temp1;
+			*temp1=ch;
+			temp1++;
+			temp2--;
+		}
+		}
+		temp1=temp4+1;
+	}
+
+	return temp3;
+		
+}
+int main()
+{
+	char str[50]="Hello Word hi are not he own";
+
+
+	printf("Reverse %s",ReverseWord(str));
+
+return 0;
+}
+*/
+
+/*
+void Reversefirstlastn(char * str1, int start, int last)
+{
+	char * temp=str1 + (last-1);
+	char * temp1= str1 +(start-1);
+	char ch;
+	
+	while(temp1<=temp)
+	{
+		ch=*temp1;
+		*temp1=*temp;
+		*temp=ch;
+		temp1++;
+		temp--;
+	}
+
+}
+
+int main()
+{
+	char str1[50]="StringReverse";
+	Reversefirstlastn(str1,3,8);
+	printf("\nafter reverse %s",str1);
+	return 0;
+}
+*/
+/*
+void Reverselastn(char * str1, int no)
+{
+	char * temp=str1;
+	char ch;
+	
+	int len=strlen(str1);
+	int len1=len-no;
+	str1=str1+len1;
+	while(*temp!='\0')
+	{
+		temp++;
+	}
+	temp--;
+
+	while(str1<=temp)
+	{
+		ch=*str1;
+		*str1=*temp;
+		*temp=ch;
+		str1++;
+		temp--;
+	}
+
+}
+
+int main()
+{
+	char str1[50]="StringReverse";
+	Reverselastn(str1,5);
+	printf("\nafter reverse %s",str1);
+	return 0;
+}
+*/
+/*
+void Reversefirstn(char * str1, int no)
+{
+	char * temp=str1;
+	char ch;
+	while(*temp!='\0' && no !=0)
+	{
+		temp++;
+		no--;
+	}
+	temp--;
+	while(str1<=temp)
+	{
+		ch=*str1;
+		*str1=*temp;
+		*temp=ch;
+		str1++;
+		temp--;
+	}
+
+}
+
+int main()
+{
+	char str1[50]="StringReverse";
+	Reversefirstn(str1,5);
+	printf("\nafter reverse %s",str1);
+	return 0;
+}
+*/
+
+/*
+void Reverse(char * str1)
+{
+	char * temp=str1;
+	char ch;
+	while(*temp!='\0')
+	{
+		temp++;
+	}
+	temp--;
+	while(str1<=temp)
+	{
+		ch=*str1;
+		*str1=*temp;
+		*temp=ch;
+		str1++;
+		temp--;
+	}
+
+}
+
+int main()
+{
+	char str1[50]="my StRiNg";
+	Reverse(str1);
+	printf("after reverse %s",str1);
+	return 0;
+}
+*/
+
+
+/*
+int mystrcmpi(char * str1, char * str2)
+{
+	while(*str1!='\0' && *str2!='\0')
+	{
+		if((*str1 == *str2) || (*str1-*str2) == 32  || (*str1 - *str2) == -32)
+		{
+			 str1++;
+			 str2++;
+		}
+		else
+		{
+			return str1 - str2;
+		}
+
+	}
+	if(*str1=='\0' && *str2=='\0')
+	{
+		return 0;
+	}
+}
+int main()
+{
+	char str1[50]="my StRiNg";
+	char str2[50]="my string";
+	int ret=mystrcmpi(str1, str2);
+	if(ret==0)
+	{
+		printf("string equal");
+	}
+	else
+	{
+		printf("string not equal");
+	}
+	return 0;
+}
+*/
+/*
+int mystrcmp(char * str1, char * str2, int no)
+{
+	while(*str1!='\0' && *str2!='\0' && no !=0)
+	{
+		if(*str1!=*str2)
+		{
+			return str1- str2;
+		}
+		else
+		{
+			str1++;
+			str2++;
+			no--;
+		}
+
+	}
+	if(no ==0 )
+	{
+		return 0;
+	}
+}
+int main()
+{
+	char str1[50]="my string";
+	char str2[50]="my string";
+	int no=5;
+	int ret=mystrcmp(str1, str2, no);
+	if(ret==0)
+	{
+		printf("string equal");
+	}
+	else
+	{
+		printf("string not equal");
+	}
+	return 0;
+}
+*/
 /*
 //Write a program which accept two strings from user and compare two strings. If both strings are equal then return 0 otherwise return difference
 // between first mismatch character (Implement strcmp()).
@@ -29,7 +326,7 @@ int mystrcmp(char * str1, char * str2)
 int main()
 {
 	char str1[50]="my string";
-	char str2[50]="my string ";
+	char str2[50]="my string";
 	int ret=mystrcmp(str1, str2);
 	if(ret==0)
 	{
