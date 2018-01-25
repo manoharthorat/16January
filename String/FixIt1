@@ -57,10 +57,6 @@ Output : dEViCE dRIvER
 
 
 
-28.Write a program which accept string from user and check whether string is
-palindrome or not.
-Input : level
-Output : String is palindrome.
 29.Write a program which sets all characters in string to a specific character
 (Implement strset()).
 Input : HelloWorld a
