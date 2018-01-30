@@ -57,23 +57,3 @@ Output : dEViCE dRIvER
 
 
 
-29.Write a program which sets all characters in string to a specific character
-(Implement strset()).
-Input : HelloWorld a
-Output : aaaaaaaaaa
-30.Write a program which sets first N characters in string to a specific character
-(Implement strnset()).
-Input : HelloWorld a 8
-Output : aaaaaaaald
-31.Write a program which sets first N characters in string to a specific character
-Input : HelloWorld a 8
-Output : Heaaaaaaaa
-32.Write a program which accept string from user and search first occurrence of
-specific character in string and return the position at which character is found
-(Implement strchr()).
-Input : India is my country. M Output : Character m is found at position 1
-33.Write a program which accept string from user and search last occurrence of
-specific character in string and return the position at which character is found
-(Implement strchr()).
-Input : India is my country. n Output : Character m is found at position 1
-

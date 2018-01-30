@@ -3,13 +3,276 @@
 #include<stdlib.h>
 
 
+int mystrchr(char * str1, char ch)
+{
+	int count = 0;
+	while(*str1!='\0')
+	{	
+		count++;
+		if(*str1==ch)
+		{
+			return count;
+		}
+		str1++;
+	}
+	return -1;
+}
+int main()
+{
+	char str1[50]="hello word";
+	char ch = 'w';
+	printf("position %d ",mystrchr(str1, ch));
+	return 0;
+}
+
+/*
+void strset(char * str, char ch, int no)
+{
+	int len = strlen(str);
+	int len1=len - no;
+
+	char * temp = str;
+	str = str+len1;
+	while(*str!= '\0')
+	{	
+		*str=ch;
+		str++;
+	}	
+	printf("%s",temp);
+}
+	
 
 int main()
 {
-	char 
+	char str[50]="Hello word";
+	char ch='q';
+	int no=5;
+	strset(str,ch,no);
 return 0;
 }
+*/
 
+
+/*
+void strset(char * str, char ch, int no)
+{
+	char * temp = str;
+	while(*str!= '\0' && no !=0)
+	{	
+		*str=ch;
+		str++;
+		no--;
+	}	
+	printf("%s",temp);
+}
+	
+
+int main()
+{
+	char str[50]="Hello word";
+	char ch='q';
+	int no=5;
+	strset(str,ch,no);
+return 0;
+}
+*/
+/*
+void strset(char * str, char ch)
+{
+	char * temp = str;
+	while(*str!= '\0')
+	{	
+		*str=ch;
+		str++;
+	}	
+	printf("%s",temp);
+}
+	
+
+int main()
+{
+	char str[50]="Hello word";
+	char ch='q';
+	strset(str,ch);
+return 0;
+}
+*/
+
+
+/*
+void mystrstr(char * str1, char * str2)
+{
+	int count=0;
+	char * temp=str2;
+	while(*str1!='\0')
+	{
+		if(*str1==*str2)
+		{
+			str1++;
+			str2++;	
+			count++;
+		}
+		else if(temp==str2)
+		{
+			str1++;
+			count++;
+		}
+		else
+		{
+			str2=temp;
+		}
+		if(*str2=='\0')
+		{
+			printf("string fount at position %d \n",(count - strlen(temp)));
+			str2=temp;
+		}
+			
+	}
+		
+}
+int main()
+{
+	char str1[50]="TutorialpointTutorialpoint";
+	char str2[50]="point";
+
+	mystrstr(str1,str2);	
+
+	
+return 0;
+}
+*/
+
+/*
+//Word count
+void word_count(char * str1, char * str2)
+{
+	char * t1=str1;
+	char * t2=str1;
+	char * t3=str1;
+	char * temp=str2;
+	char ch;
+	int count =0;
+
+	while(*str1!='\0')
+	{
+		t1=str1;
+		while(*str1!= ' ' && *str1!='\0')
+		{
+			if(*str1==*str2)
+			{
+				str1++;
+				str2++;
+			}
+			else if(str2==temp)
+			{
+				str1++;
+			}
+			else
+			{
+				str2=temp;
+			}
+			if(*str2=='\0')
+			{
+				count++;
+				t2=str1;
+				t2--;
+				while(t1<=t2)
+				{
+					ch= *t1;
+					*t1=*t2;
+					*t2=ch;
+					t1++;
+					t2--;
+				}
+			}
+		}
+		str1++;
+	}
+	printf("Count is %d \n",count);
+	printf("String is %s \n",t3);
+}	
+
+int main()
+{
+	char str1[100]="This is string is string the string string";
+	char str2[50]="string";
+	
+	word_count(str1, str2);
+
+	return 0;
+}
+*/
+
+/*
+//Word count
+void word_count(char * str1, char * str2)
+{
+	int count=0;
+	char * temp=str2;
+	while(*str1!='\0')
+	{
+		if(*str1 ==*str2)
+		{
+			str1++;
+			str2++;
+		}
+		else if(str2 == temp)
+		{	
+			str1++;
+		}
+		else
+		{
+			str2=temp;
+		}
+		if(*str2=='\0')
+		{
+			count ++;
+		}
+	}
+	printf("Count is %d \n",count);
+
+}
+int main()
+{
+	char str1[100]="This is string is string the string string";
+	char str2[50]="string";
+	
+	word_count(str1, str2);
+
+	return 0;
+}
+*/
+
+/*
+//Remove the duplicate 
+void remove_duplicate(char * str)
+{
+		char ascii[256]={'0'};
+		char ch;
+		char newstr[50];
+		int i=0;
+		while(*str!='\0')
+		{
+			ch= *str;
+			if(ascii[ch]==0)
+			{
+				ascii[ch]=1;
+				newstr[i]=ch;
+				i++;
+			}	
+			str++;
+		}
+		newstr[i]='\0';
+		printf("%s ",newstr);
+}
+
+int main()
+{
+	char str[50]="aaasdasdassdfgdfghdfgsdfasdfasf";
+	remove_duplicate(str);
+return 0;
+}
+*/
 
 
 /*
